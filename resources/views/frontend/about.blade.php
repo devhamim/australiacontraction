@@ -58,17 +58,9 @@
                         <!-- About Content Footer Start -->
                         <div class="about-us-content-footer wow fadeInUp" data-wow-delay="0.75s">
                             <div class="about-us-footer-btn">
-                                <a href="#" class="btn-default">get free quote</a>
+                                <a href="{{ route('contect') }}" class="btn-default">get free quote</a>
                             </div>
-                            <div class="about-us-contact-support">
-                                <div class="icon-box">
-                                    <img src="{{ asset('frontend') }}/images/icon-phone.svg" alt="">
-                                </div>
-                                <div class="about-us-support-content">
-                                    <p>call support center 24X7</p>
-                                    <h3>+1 809 120 6705</h3>
-                                </div>
-                            </div>
+
                         </div>
                         <!-- About Content Footer End -->
                     </div>
@@ -191,37 +183,6 @@
 	</div>
 	<!-- Our Mission Vision End -->
 
-	<!-- Intro Video Section Start -->
-	<div class="intro-video">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- Intro Video Box Start -->
-					<div class="intro-video-box" data-cursor-text="Play">
-						<!-- Video Image Start -->
-						<div class="video-image">
-							<a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
-								<figure class="image-anime">
-									<img src="{{ asset('frontend') }}/images/video-bg.jpg" alt="">
-								</figure>
-							</a>
-						</div>
-						<!-- Video Image End -->
-
-						<!-- Video Play Button Start -->
-						<div class="video-play-button">
-							<a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video">
-								<i class="fa-solid fa-play"></i>
-							</a>
-						</div>
-						<!-- Video Play Button End -->
-					</div>
-					<!-- Intro Video Box End -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Intro Video Section End -->
 
 	<!-- What We Do Section Start -->
 	 <div class="what-we-do">
@@ -275,7 +236,7 @@
 					<div class="company-counter-item">
 						<div class="company-counter-content">
 							<h3><span class="counter">4.253</span></h3>
-							<p>million euros turnover in 2020</p>
+							<p>million euros turnover in 2023</p>
 						</div>
 					</div>
 					<!-- Company Counter Item End -->
@@ -285,129 +246,4 @@
 	 </div>
 	<!-- What We Do Section End -->
 
-	<!-- Cta Box Section Start -->
-	<div class="cta-box">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-7 col-md-8">
-					<!-- Section Title Start -->
-					<div class="section-title">
-						<h2 class="text-anime-style-3" data-cursor="-opaque">Let's bulid something great together!</h2>
-						<p class="wow fadeInUp">Don't wait any longer to bring your construction dreams to life. Partner with Builtup and experience unparalleled service and quality.</p>
-					</div>
-					<!-- Section Title End -->
-
-					<!-- Section Btn Start -->
-					<div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
-						<a href="#" class="btn-default btn-large">get free quote</a>
-					</div>
-					<!-- Section Btn End -->
-				</div>
-
-				<div class="col-lg-5 col-md-4">
-					<!-- Cta Box Image Start -->
-					<div class="cta-box-image">
-						<figure>
-							<img src="{{ asset('frontend') }}/images/cta-box-img.png" alt="">
-						</figure>
-					</div>
-					<!-- Cta Box Image End -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Cta Box Section End -->
-
-    <!-- Contact Us Section Start -->
-    <div class="contact-us">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-5">
-                    <!-- Contact Sidebar Start -->
-                    <div class="contact-sidebar wow fadeInUp" data-wow-delay="0.25s">
-                        <!-- Contact Info Start -->
-                        <div class="contact-info">
-                            <div class="icon-box">
-                                <img src="{{ asset('frontend') }}/images/icon-phone.svg" alt="">
-                            </div>
-                            <div class="contact-info-content">
-                                <p>call support center 24/7</p>
-                                <h3>+1 809 120 6705</h3>
-                            </div>
-                        </div>
-                        <!-- Contact Info End -->
-
-                        <!-- Contact Info Start -->
-                        <div class="contact-info">
-                            <div class="icon-box">
-                                <img src="{{ asset('frontend') }}/images/icon-mail.svg" alt="">
-                            </div>
-                            <div class="contact-info-content">
-                                <p>write to us</p>
-                                <h3>info@domain.com</h3>
-                            </div>
-                        </div>
-                        <!-- Contact Info End -->
-
-                        <!-- Contact Info Image Start -->
-                        <div class="contact-info-image">
-                            <figure>
-                                <img src="{{ asset('frontend') }}/images/contact-info-img.png" alt="">
-                            </figure>
-                        </div>
-                        <!-- Contact Info Image End -->
-                    </div>
-                    <!-- Contact Sidebar End -->
-                </div>
-
-                <div class="col-lg-8 col-md-7">
-                    <!-- Contact Form start -->
-                    <div class="contact-form wow fadeInUp" data-wow-delay="0.25s">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">contact us</h3>
-                            <h2 class="text-anime-style-3" data-cursor="-opaque">Get in touch with us</h2>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator">
-                            <div class="row">
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your name" required="">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Your email" required="">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone number" required="">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="website" class="form-control" id="website" placeholder="Subject" required="">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="form-group col-md-12 mb-5">
-                                    <textarea name="msg" class="form-control" id="msg" rows="3" placeholder="Message" required=""></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn-default">submit</button>
-                                    <div id="msgSubmit" class="h3 hidden"></div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- Contact Form end -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact Us Section End -->
 @endsection

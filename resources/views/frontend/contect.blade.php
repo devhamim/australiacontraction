@@ -20,22 +20,7 @@
     <div class="contact-information">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <!-- Contact Info Item Start -->
-                    <div class="contact-info-item wow fadeInUp" data-wow-delay="0.25s">
-                        <div class="icon-box">
-                            <img src="{{ asset('frontend') }}/images/icon-phone.svg" alt="">
-                        </div>
-                        <div class="contact-info-body">
-                            <h3>call support center 24/7</h3>
-                            <p>+1 809 120 6705</p>
-                            <p>+1 809 120 6705</p>
-                        </div>
-                    </div>
-                    <!-- Contact Info Item End -->
-                </div>
-
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <!-- Contact Info Item Start -->
                     <div class="contact-info-item wow fadeInUp" data-wow-delay="0.5s">
                         <div class="icon-box">
@@ -43,14 +28,13 @@
                         </div>
                         <div class="contact-info-body">
                             <h3>write to us</h3>
-                            <p>info@domain.com</p>
-                            <p>Support@domain.com</p>
+                            <p>{{ $settings->first()->email }}</p>
                         </div>
                     </div>
                     <!-- Contact Info Item End -->
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <!-- Contact Info Item Start -->
                     <div class="contact-info-item wow fadeInUp" data-wow-delay="0.75s">
                         <div class="icon-box">
@@ -58,7 +42,7 @@
                         </div>
                         <div class="contact-info-body">
                             <h3>visit us</h3>
-                            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                            <p>{{ $settings->first()->address }}</p>
                         </div>
                     </div>
                     <!-- Contact Info Item End -->
@@ -82,7 +66,8 @@
                         </div>
                         <!-- Section Title End -->
 
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator">
+                        <form method="POST" action="{{ route('customerMessage.store') }}">
+							@csrf
                             <div class="row">
                                 <div class="form-group col-md-6 mb-3">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your name" required="">
@@ -105,7 +90,7 @@
                                 </div>
 
                                 <div class="form-group col-md-12 mb-4">
-                                    <textarea name="msg" class="form-control" id="msg" rows="3" placeholder="Message" required=""></textarea>
+                                    <textarea name="message" class="form-control" id="msg" rows="3" placeholder="Message" required=""></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
 

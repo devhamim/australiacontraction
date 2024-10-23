@@ -20,6 +20,7 @@
                             <li class="nav-item"><a class="nav-link" href="{{ route('about_us') }}">About Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">Services</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('gallerys') }}">Project</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('our.blog') }}">Blogs</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('contect') }}">Contact</a></li>
                             <li class="nav-item highlighted-menu"><a class="nav-link" href="{{ route('contect') }}">Contact Us</a></li>
                         </ul>

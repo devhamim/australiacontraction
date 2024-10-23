@@ -9,14 +9,14 @@
                 <!-- Hero Content Start -->
                 <div class="hero-content">
                     <div class="section-title">
-                        <h3 class="wow fadeInUp">welcome to builtup</h3>
+                        <h3 class="wow fadeInUp">welcome to {{ $settings->first()->name }}</h3>
                         <h1 class="text-anime-style-3" data-cursor="-opaque">Building dreams with precision and excellence</h1>
                         <p class="wow fadeInUp" data-wow-delay="0.25s">we specialize in turning visions into reality with exceptional craftsmanship and meticulous attention to detail. With years of experience and a commitment to quality.</p>
                     </div>
 
                     <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
-                        <a href="#" class="btn-default">get started</a>
-                        <a href="#" class="btn-default btn-highlighted">view Projects</a>
+                        <a href="{{ route('contect') }}" class="btn-default">get started</a>
+                        <a href="{{ route('gallerys') }}" class="btn-default btn-highlighted">view Projects</a>
                     </div>
                 </div>
                 <!-- Hero Content End -->
@@ -66,17 +66,9 @@
                     <!-- About Content Footer Start -->
                     <div class="about-content-footer wow fadeInUp" data-wow-delay="0.75s">
                         <div class="about-footer-btn">
-                            <a href="#" class="btn-default">get free quote</a>
+                            <a href="{{ route('contect') }}" class="btn-default">get free quote</a>
                         </div>
-                        <div class="about-contact-support">
-                            <div class="icon-box">
-                                <img src="{{ asset('frontend') }}/images/icon-phone.svg" alt="">
-                            </div>
-                            <div class="about-support-content">
-                                <p>call support center 24X7</p>
-                                <h3>+1 809 120 6705</h3>
-                            </div>
-                        </div>
+
                     </div>
                     <!-- About Content Footer End -->
                 </div>
@@ -123,15 +115,6 @@
                                 <h3>building construction</h3>
                             </div>
                             <!-- Service Body Title End -->
-
-                            <!-- Service Content Start -->
-                            <div class="service-content">
-                                <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
-                                <div class="service-content-footer">
-                                    <a href="#" class="readmore-btn">view more</a>
-                                </div>
-                            </div>
-                            <!-- Service Content End -->
                         </div>
                         <!-- Service Body End -->
                     </div>
@@ -162,9 +145,7 @@
                             <!-- Service Content Start -->
                             <div class="service-content">
                                 <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
-                                <div class="service-content-footer">
-                                    <a href="#" class="readmore-btn">view more</a>
-                                </div>
+
                             </div>
                             <!-- Service Content End -->
                         </div>
@@ -197,9 +178,7 @@
                             <!-- Service Content Start -->
                             <div class="service-content">
                                 <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
-                                <div class="service-content-footer">
-                                    <a href="#" class="readmore-btn">view more</a>
-                                </div>
+
                             </div>
                             <!-- Service Content End -->
                         </div>
@@ -232,9 +211,7 @@
                             <!-- Service Content Start -->
                             <div class="service-content">
                                 <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
-                                <div class="service-content-footer">
-                                    <a href="#" class="readmore-btn">view more</a>
-                                </div>
+
                             </div>
                             <!-- Service Content End -->
                         </div>
@@ -245,7 +222,7 @@
 
                 <!-- Services Footer Btn Start -->
                 <div class="service-footer-btn wow fadeInUp" data-wow-delay="1.25s">
-                    <a href="#" class="btn-default">view all services</a>
+                    <a href="{{ route('services') }}" class="btn-default">view all services</a>
                 </div>
                 <!-- Services Footer Btn End -->
             </div>
@@ -399,9 +376,7 @@
                             <!-- Project Content Start -->
                             <div class="project-content">
                                 <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
-                                <div class="project-content-footer">
-                                    <a href="#" class="readmore-btn">view more</a>
-                                </div>
+
                             </div>
                             <!-- Project Content End -->
                         </div>
@@ -435,9 +410,7 @@
                             <!-- Project Content Start -->
                             <div class="project-content">
                                 <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
-                                <div class="project-content-footer">
-                                    <a href="#" class="readmore-btn">view more</a>
-                                </div>
+
                             </div>
                             <!-- Project Content End -->
                         </div>
@@ -470,9 +443,7 @@
                             <!-- Project Content Start -->
                             <div class="project-content">
                                 <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
-                                <div class="project-content-footer">
-                                    <a href="#" class="readmore-btn">view more</a>
-                                </div>
+
                             </div>
                             <!-- Project Content End -->
                         </div>
@@ -505,9 +476,7 @@
                             <!-- Project Content Start -->
                             <div class="project-content">
                                 <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
-                                <div class="project-content-footer">
-                                    <a href="#" class="readmore-btn">view more</a>
-                                </div>
+
                             </div>
                             <!-- Project Content End -->
                         </div>
@@ -518,7 +487,7 @@
 
                 <!-- Services Footer Btn Start -->
                 <div class="project-footer-btn wow fadeInUp" data-wow-delay="1.25s">
-                    <a href="#" class="btn-default">view all projects</a>
+                    <a href="{{ route('gallerys') }}" class="btn-default">view all projects</a>
                 </div>
                 <!-- Services Footer Btn End -->
             </div>
@@ -541,7 +510,7 @@
 
                 <!-- Section Btn Start -->
                 <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
-                    <a href="#" class="btn-default btn-large">get free quote</a>
+                    <a href="{{ route('contect') }}" class="btn-default btn-large">get free quote</a>
                 </div>
                 <!-- Section Btn End -->
             </div>
@@ -873,14 +842,15 @@
         </div>
 
         <div class="row">
+            @foreach ($blogs->take(3) as $blog)
             <div class="col-lg-4 col-md-6">
                 <!-- Blog Item Start -->
                 <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
                     <!-- Post Featured Image Start-->
                     <div class="post-featured-image" data-cursor-text="View">
                         <figure>
-                            <a href="#" class="image-anime">
-                                <img src="{{ asset('frontend') }}/images/post-1.jpg" alt="">
+                            <a href="{{ route('our.blog.details', $blog->slug) }}" class="image-anime">
+                                <img src="{{ asset('uploads/blog') }}/{{ $blog->image }}" alt="">
                             </a>
                         </figure>
                     </div>
@@ -890,13 +860,13 @@
                     <div class="post-item-content">
                         <!-- post Item Body Start -->
                         <div class="post-item-body">
-                            <h2><a href="#">10 Essential Tips for Choosing the Right Builder</a></h2>
+                            <h2><a href="{{ route('our.blog.details', $blog->slug) }}">{{ $blog->title }}</a></h2>
                         </div>
                         <!-- Post Item Body End-->
 
                         <!-- Post Item Footer Start-->
                         <div class="post-item-footer">
-                            <a href="#" class="readmore-btn">read more</a>
+                            <a href="{{ route('our.blog.details', $blog->slug) }}" class="readmore-btn">read more</a>
                         </div>
                         <!-- Post Item Footer End-->
                     </div>
@@ -904,70 +874,8 @@
                 </div>
                 <!-- Blog Item End -->
             </div>
+            @endforeach
 
-            <div class="col-lg-4 col-md-6">
-                <!-- Blog Item Start -->
-                <div class="blog-item wow fadeInUp" data-wow-delay="0.5s">
-                    <!-- Post Featured Image Start-->
-                    <div class="post-featured-image" data-cursor-text="View">
-                        <figure>
-                            <a href="#" class="image-anime">
-                                <img src="{{ asset('frontend') }}/images/post-2.jpg" alt="">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- Post Featured Image End -->
-
-                    <!-- post Item Content Start -->
-                    <div class="post-item-content">
-                        <!-- post Item Body Start -->
-                        <div class="post-item-body">
-                            <h2><a href="#">The Future of Sustainable Construction Innovations</a></h2>
-                        </div>
-                        <!-- Post Item Body End-->
-
-                        <!-- Post Item Footer Start-->
-                        <div class="post-item-footer">
-                            <a href="#" class="readmore-btn">read more</a>
-                        </div>
-                        <!-- Post Item Footer End-->
-                    </div>
-                    <!-- post Item Content End -->
-                </div>
-                <!-- Blog Item End -->
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <!-- Blog Item Start -->
-                <div class="blog-item wow fadeInUp" data-wow-delay="0.75s">
-                    <!-- Post Featured Image Start-->
-                    <div class="post-featured-image" data-cursor-text="View">
-                        <figure>
-                            <a href="#" class="image-anime">
-                                <img src="{{ asset('frontend') }}/images/post-3.jpg" alt="">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- Post Featured Image End -->
-
-                    <!-- post Item Content Start -->
-                    <div class="post-item-content">
-                        <!-- post Item Body Start -->
-                        <div class="post-item-body">
-                            <h2><a href="#">How to Design Your Dream Home: A Step-by-Step Guide</a></h2>
-                        </div>
-                        <!-- Post Item Body End-->
-
-                        <!-- Post Item Footer Start-->
-                        <div class="post-item-footer">
-                            <a href="#" class="readmore-btn">read more</a>
-                        </div>
-                        <!-- Post Item Footer End-->
-                    </div>
-                    <!-- post Item Content End -->
-                </div>
-                <!-- Blog Item End -->
-            </div>
         </div>
     </div>
 </div>
@@ -980,17 +888,7 @@
             <div class="col-lg-4 col-md-5">
                 <!-- Contact Sidebar Start -->
                 <div class="contact-sidebar wow fadeInUp" data-wow-delay="0.25s">
-                    <!-- Contact Info Start -->
-                    <div class="contact-info">
-                        <div class="icon-box">
-                            <img src="{{ asset('frontend') }}/images/icon-phone.svg" alt="">
-                        </div>
-                        <div class="contact-info-content">
-                            <p>call support center 24/7</p>
-                            <h3>+1 809 120 6705</h3>
-                        </div>
-                    </div>
-                    <!-- Contact Info End -->
+
 
                     <!-- Contact Info Start -->
                     <div class="contact-info">
@@ -999,7 +897,7 @@
                         </div>
                         <div class="contact-info-content">
                             <p>write to us</p>
-                            <h3>info@domain.com</h3>
+                            <h3>{{ $settings->first()->email }}</h3>
                         </div>
                     </div>
                     <!-- Contact Info End -->
@@ -1025,7 +923,8 @@
                     </div>
                     <!-- Section Title End -->
 
-                    <form id="contactForm" action="#" method="POST" data-toggle="validator">
+                    <form method="POST" action="{{ route('customerMessage.store') }}">
+                        @csrf
                         <div class="row">
                             <div class="form-group col-md-6 mb-4">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Enter Your name" required="">
@@ -1043,12 +942,12 @@
                             </div>
 
                             <div class="form-group col-md-6 mb-4">
-                                <input type="text" name="website" class="form-control" id="website" placeholder="Subject" required="">
+                                <input type="text" name="subject" class="form-control" id="website" placeholder="Subject" required="">
                                 <div class="help-block with-errors"></div>
                             </div>
 
                             <div class="form-group col-md-12 mb-5">
-                                <textarea name="msg" class="form-control" id="msg" rows="3" placeholder="Message" required=""></textarea>
+                                <textarea name="message" class="form-control" id="msg" rows="3" placeholder="Message" required=""></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
 
