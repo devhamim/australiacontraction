@@ -114,6 +114,10 @@
                             <div class="service-body-title">
                                 <h3>building construction</h3>
                             </div>
+                            <div class="service-content">
+                                <p>Our post-construction services gives you peace of mind knowing that we are still here for you even after.</p>
+                                
+                            </div>
                             <!-- Service Body Title End -->
                         </div>
                         <!-- Service Body End -->
