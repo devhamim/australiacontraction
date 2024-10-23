@@ -10,7 +10,7 @@
 				<div class="col-lg-12">
 					<!-- Page Header Box Start -->
 					<div class="page-header-box">
-						<h1 class="text-anime-style-3" data-cursor="-opaque">Our Blog</h1>
+						<h1 class="text-anime-style-3" data-cursor="-opaque">Policy</h1>
 
 					</div>
 					<!-- Page Header Box End -->
