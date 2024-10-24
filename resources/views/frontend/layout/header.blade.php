@@ -22,12 +22,12 @@
                             <li class="nav-item"><a class="nav-link" href="{{ route('gallerys') }}">Project</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('our.blog') }}">Blogs</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ route('contect') }}">Contact</a></li>
-                            <li class="nav-item highlighted-menu"><a class="nav-link" href="{{ route('contect') }}">Contact Us</a></li>
+                            {{-- <li class="nav-item highlighted-menu"><a class="nav-link" href="{{ route('contect') }}">Contact Us</a></li> --}}
                         </ul>
                     </div>
                     <!-- Let’s Start Button Start -->
                     <div class="header-btn d-inline-flex">
-                        <a href="contact.html" class="btn-default">Contact Us</a>
+                        <a href="{{ route('contect') }}" class="btn-default">Contact Us</a>
                     </div>
                     <!-- Let’s Start Button End -->
                 </div>
