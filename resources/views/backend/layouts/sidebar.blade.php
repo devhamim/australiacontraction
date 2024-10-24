@@ -20,6 +20,12 @@
                     <li class="sidebar-dropdown-item">
                         <a href="{{ route('about.index') }}" class="sidebar-link"><span class="nav-icon"><i class="fa-solid fa-eject"></i></span> <span class="sidebar-txt">About</span></a>
                     </li>
+                    <li class="sidebar-dropdown-item">
+                        <a href="{{ route('careerlist.index') }}" class="sidebar-link"><span class="nav-icon"><i class="fa-solid fa-user-pen"></i></span> <span class="sidebar-txt">Career List</span></a>
+                    </li>
+                    <li class="sidebar-dropdown-item">
+                        <a href="{{ route('careerapplay.index') }}" class="sidebar-link"><span class="nav-icon"><i class="fa-solid fa-list-check"></i></span> <span class="sidebar-txt">Career Applay List</span></a>
+                    </li>
                     {{-- <li class="sidebar-dropdown-item">
                         <a href="{{ route('products.index') }}" class="sidebar-link"><span class="nav-icon"><i class="fa-solid fa-cart-plus"></i></span> <span class="sidebar-txt">Product</span></a>
                     </li> --}}

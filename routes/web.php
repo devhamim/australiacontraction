@@ -4,6 +4,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AchieveController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\careerApplayList;
+use App\Http\Controllers\careerListController;
 use App\Http\Controllers\clientsController;
 use App\Http\Controllers\CustomerMessageController;
 use App\Http\Controllers\CustomerSayController;
@@ -56,6 +58,10 @@ Route::get('/our/privacy/policy', [FrontendController::class, 'our_privacy_polic
 Route::get('/our/product', [FrontendController::class, 'our_product'])->name('our.product');
 Route::get('/our/media', [FrontendController::class, 'our_media'])->name('our.media');
 Route::get('/register/dealerform', [FrontendController::class, 'register_dealerform'])->name('register.dealerform');
+Route::get('/career', [FrontendController::class, 'career'])->name('career');
+Route::get('/careers/applay/{id}', [FrontendController::class, 'careers_applay'])->name('careers.applay');
+Route::post('/career/applay/store', [FrontendController::class, 'career_applay_store'])->name('career.applay.store');
+Route::get('/career/applay/success', [FrontendController::class, 'career_applay_success'])->name('career.applay.success');
 
 Route::post('/blog/comment', [BlogController::class, 'blog_comment'])->name('blog.comment');
 Route::get('/dealerform/visiting/{id}', [DealerFormController::class, 'dealerform_visiting'])->name('dealerform.visiting');
@@ -85,4 +91,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('index');
             'medias'      => MediaController::class,
             'videos'      => VideoController::class,
             'dealerform'      => DealerFormController::class,
+            'careerlist'    => careerListController::class,
+            'careerapplay'  => careerApplayList::class,
         ]);

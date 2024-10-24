@@ -33,6 +33,7 @@
                     <h3>Useful Links</h3>
                     <ul>
                         <li><a href="{{ route('contect') }}">Contact</a></li>
+                        <li><a href="{{route('career')}}">Career</a></li>
                         <li><a href="{{ route('our.privacy.policy') }}">Privacy Policy</a></li>
                         <li><a href="{{ route('our.privacy.policy') }}">Terms and Conditions</a></li>
                     </ul>
@@ -83,7 +84,7 @@
                     <!-- Footer Copyright End -->
                 </div>
 
-                <div class="col-lg-6 col-md-5">
+                {{-- <div class="col-lg-6 col-md-5">
                     <!-- Footer Social Link Start -->
                     <div class="footer-social-links">
                         <ul>
@@ -95,7 +96,7 @@
                         </ul>
                     </div>
                     <!-- Footer Social Link End -->
-                </div>
+                </div> --}}
             </div>
         </div>
         <!-- Footer Copyright Section End -->

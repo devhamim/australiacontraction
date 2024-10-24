@@ -13,11 +13,15 @@ use App\Models\service;
 use App\Models\setting;
 use App\Models\team;
 use App\Models\blogComment;
+use App\Models\careerlist;
+use App\Models\careersApplayStore;
+use App\Models\country;
 use App\Models\media;
 use App\Models\privacyPolicy;
 use App\Models\product;
 use App\Models\video;
 use Illuminate\Http\Request;
+use Str;
 
 class FrontendController extends Controller
 {
@@ -163,6 +167,81 @@ class FrontendController extends Controller
     // register_dealerform
     function register_dealerform(){
         return view('frontend.dealerform');
+    }
+
+    // career
+    function career(){
+        $careerlists = careerlist::all();
+        return view('frontend.careers', [
+            'careerlists'=>$careerlists,
+        ]);
+    }
+    // careers_applay
+    function careers_applay($id){
+        $careerlists = careerlist::find($id);
+        $countries = country::all();
+
+        return view('frontend.careers_applay', [
+            'careerlists'=>$careerlists,
+            'countries'=>$countries,
+        ]);
+    }
+
+
+    function career_applay_store(Request $request){
+        $rules = [
+            'career_id'     => 'required',
+            'resume'        => 'required',
+            'fast_name'     => 'required',
+            'middle_name'   => '',
+            'last_name'     => 'required',
+            'gender'        => 'required',
+            'email'         => 'required',
+            'country_code'  => 'required',
+            'number'        => 'required',
+            'country_name'  => 'required',
+            'address_one'   => 'required',
+            'address_two'   => '',
+            'city'          => '',
+            'post_code'     => '',
+            'street'        => '',
+            'hear_about_us' => '',
+            'desired_salary'=> '',
+            'job_title'     => '',
+            'start_date'    => '',
+            'end_date'      => '',
+            'edu_level'     => '',
+            'edu_institution' => '',
+            'gradu_year'    => '',
+            'cover_later'   => '',
+            'link'          => '',
+        ];
+
+        $validatesData = $request->validate($rules);
+
+
+        if($request->hasFile('resume')){
+            $resume = $request->file('resume');
+            $extension = $resume->getClientOriginalExtension();
+            $file_name = Str::random(5). rand(1000, 999999). '.'.$extension;
+            $resume->move(public_path('uploads/career'), $file_name);
+            $validatesData['resume'] = $file_name;
+        }
+        if($request->hasFile('cover_later')){
+            $cover_later = $request->file('cover_later');
+            $extension = $cover_later->getClientOriginalExtension();
+            $file_name = Str::random(5). rand(1000, 999999). '.'.$extension;
+            $cover_later->move(public_path('uploads/career'), $file_name);
+            $validatesData['cover_later'] = $file_name;
+        }
+
+        careersApplayStore::create($validatesData);
+        toast('Add Success','success');
+        return redirect()->route('career.applay.success');
+    }
+
+    function career_applay_success(){
+        return view('frontend.career_success');
     }
 
 }
